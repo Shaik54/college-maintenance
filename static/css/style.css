@@ -1,0 +1,300 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef1f4;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-container {
+    width: 400px;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #cfd4d8;
+}
+
+.login-container h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: #263238;
+}
+
+.login-container > p {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #607d8b;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #37474f;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b0b7bc;
+    border-radius: 0;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.form-group input:focus {
+    outline: 1px solid #607d8b;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    background-color: #37474f;
+    color: #ffffff;
+    border: 1px solid #37474f;
+    border-radius: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #37474f;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 240px;
+    min-width: 240px;
+    background-color: #263238;
+    color: #ffffff;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+}
+
+#logoutBtn {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #455a64;
+    color: #ffffff;
+    border: 1px solid #607d8b;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+
+/* Main content */
+
+.main-content {
+    flex: 1;
+    padding: 35px;
+    background-color: #eef1f4;
+    min-width: 0;
+}
+
+
+/* Top bar */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+/* Statistics */
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #cfd4d8;
+}
+
+.stat-card h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.stat-card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* Staff workload */
+
+.dashboard-section {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #cfd4d8;
+    width: 100%;
+}
+
+
+/* Complaints table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-container th,
+.table-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #d9dde0;
+}
+
+.table-container th {
+    background-color: #e5e8eb;
+}
+
+
+/* =========================
+   STAFF DASHBOARD
+========================= */
+
+.staff-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.staff-dashboard .sidebar {
+    width: 220px;
+    background-color: #263238;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-dashboard .sidebar h1 {
+    margin-bottom: 40px;
+}
+
+.staff-dashboard .sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 0;
+}
+
+.staff-dashboard .sidebar button {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #455a64;
+    color: #ffffff;
+    border: 1px solid #607d8b;
+    border-radius: 0;
+}
+
+.staff-dashboard .main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #eef1f4;
+}
+
+.staff-dashboard .complaints-container {
+    margin-top: 20px;
+}
+
+.staff-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.staff-dashboard th,
+.staff-dashboard td {
+    padding: 12px;
+    border-bottom: 1px solid #d9dde0;
+    text-align: left;
+}
+
+.staff-dashboard th {
+    background-color: #e5e8eb;
+}
+
+.staff-dashboard button {
+    padding: 8px 12px;
+    background-color: #455a64;
+    color: #ffffff;
+    border: 1px solid #455a64;
+    border-radius: 0;
+    cursor: pointer;
+}

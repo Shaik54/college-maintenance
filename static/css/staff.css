@@ -1,0 +1,106 @@
+.staff-dashboard {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background: #eef1f4;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sidebar */
+.staff-dashboard .sidebar {
+    width: 220px;
+    min-height: 100vh;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    background: #263238;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h1 {
+    margin: 0 0 40px;
+    font-size: 22px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    padding: 12px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sidebar button {
+    margin-top: auto;
+    padding: 10px;
+    background: #455a64;
+    color: #fff;
+    border: 1px solid #607d8b;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* Main */
+.staff-dashboard .main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.main-content h1 {
+    margin: 0 0 25px;
+    font-size: 28px;
+}
+
+.main-content h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Table */
+.complaints-container {
+    background: #fff;
+    border: 1px solid #cfd4d8;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #d9dde0;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #e5e8eb;
+    font-weight: 600;
+}
+
+/* Controls */
+button {
+    padding: 8px 14px;
+    background: #455a64;
+    color: #fff;
+    border: 1px solid #455a64;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+select {
+    padding: 7px 10px;
+    border: 1px solid #aeb5ba;
+    border-radius: 0;
+    background: #fff;
+}

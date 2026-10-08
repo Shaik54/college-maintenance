@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staff Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/staff.css' %}">
+
+</head>
+
+<body>
+
+    <div class="staff-dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h1>
+                College<br>
+                Maintenance
+            </h1>
+
+            <nav>
+
+                <a href="/staff-dashboard/">
+                    Dashboard
+                </a>
+
+            </nav>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <h1>
+                Staff Dashboard
+            </h1>
+
+            <h2>
+                My Assigned Complaints
+            </h2>
+
+
+            <div class="complaints-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Title</th>
+
+                            <th>Description</th>
+
+                            <th>Priority</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="complaintsTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="{% static 'js/staff-dashboard.js' %}"></script>
+
+</body>
+
+</html>

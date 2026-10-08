@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Maintenance - Register</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Create Account</h1>
+
+        <p>Register for College Maintenance</p>
+
+        <form id="registerForm">
+
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+
+                <input type="text" id="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+
+                <input type="text" id="last_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">
+                    Confirm Password
+                </label>
+
+                <input type="password" id="confirm_password" required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="role">Role</label>
+
+                <select id="role">
+
+                    <option value="student">
+                        Student
+                    </option>
+
+                    <option value="staff">
+                        Maintenance Staff
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button type="submit">
+                Register
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+        <p>
+            Already have an account?
+            <a href="/">Click here to login</a>
+        </p>
+
+    </div>
+
+    <script src="{% static 'js/register.js' %}"></script>
+
+</body>
+
+</html>

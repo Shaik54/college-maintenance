@@ -1,0 +1,185 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/student.css' %}">
+
+</head>
+
+<body>
+
+    <div class="student-dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h1>
+                College<br>
+                Maintenance
+            </h1>
+
+            <nav>
+
+                <a href="/student-dashboard/">
+                    Dashboard
+                </a>
+
+            </nav>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <h1>
+                Student Dashboard
+            </h1>
+
+
+            <!-- Create Complaint -->
+
+            <div class="complaint-form">
+
+                <h2>
+                    Create Complaint
+                </h2>
+
+                <form id="complaintForm">
+
+                    <div>
+                        <label>Title</label>
+
+                        <input type="text" id="title" required>
+                    </div>
+
+
+                    <div>
+                        <label>Description</label>
+
+                        <textarea id="description" required></textarea>
+                    </div>
+
+
+                    <div>
+                        <label>Category</label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label>Location</label>
+
+                        <select id="location" required>
+
+                            <option value="">
+                                Select Location
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label>Priority</label>
+
+                        <select id="priority">
+
+                            <option value="low">
+                                Low
+                            </option>
+
+                            <option value="medium">
+                                Medium
+                            </option>
+
+                            <option value="high">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit">
+                        Submit Complaint
+                    </button>
+
+                </form>
+
+                <p id="message"></p>
+
+            </div>
+
+
+            <!-- My Complaints -->
+
+            <div class="complaints-container">
+
+                <h2>
+                    My Complaints
+                </h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Title</th>
+
+                            <th>Priority</th>
+
+                            <th>Status</th>
+
+                            <th>Created</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="complaintsTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="{% static 'js/student-dashboard.js' %}">
+    </script>
+
+</body>
+
+</html>
